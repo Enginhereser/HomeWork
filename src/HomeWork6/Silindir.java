@@ -6,7 +6,10 @@ public class Silindir extends Daire {
 
     public Silindir(double yariCap, double yukseklik) {
         super(yariCap);
-        this.yukseklik = yukseklik;
+        if (yukseklik<0) yukseklik=0;
+        else {
+            this.yukseklik = yukseklik;
+        }
 
     }
 
@@ -16,8 +19,10 @@ public class Silindir extends Daire {
     }
 
     public void setYukseklik(double yukseklik) {
-
-        this.yukseklik = yukseklik;
+        if (yukseklik<0) yukseklik=0;
+        else {
+            this.yukseklik = yukseklik;
+        }
     }
 
 
